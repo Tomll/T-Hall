@@ -1,0 +1,31 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">T-Hall</string>
+    <!--alarm string-->
+    <string name="main_clock_12_hours_format" translatable="false">h&#58;mm&#8202;<b><font face="sans-serif" size="16">a</font></b></string>
+    <string name="clock_24_hours_format" translatable="false">kk&#58;mm</string>
+    <string name="description_direction_both">左滑小睡或右滑关闭</string>
+    <string name="alarm_alert_snooze_text">小睡</string>
+    <string name="alarm_alert_dismiss_text">关闭</string>
+    <!--standby string-->
+    <string name="hall_view_date_sunday">星期日</string>
+    <string name="hall_view_date_monday">星期一</string>
+    <string name="hall_view_date_tuesday">星期二</string>
+    <string name="hall_view_date_wednesday">星期三</string>
+    <string name="hall_view_date_thursday">星期四</string>
+    <string name="hall_view_date_friday">星期五</string>
+    <string name="hall_view_date_saturday">星期六</string>
+    <string name="hall_view_date_month_1">1月</string>
+    <string name="hall_view_date_month_2">2月</string>
+    <string name="hall_view_date_month_3">3月</string>
+    <string name="hall_view_date_month_4">4月</string>
+    <string name="hall_view_date_month_5">5月</string>
+    <string name="hall_view_date_month_6">6月</string>
+    <string name="hall_view_date_month_7">7月</string>
+    <string name="hall_view_date_month_8">8月</string>
+    <string name="hall_view_date_month_9">9月</string>
+    <string name="hall_view_date_month_10">10月</string>
+    <string name="hall_view_date_month_11">11月</string>
+    <string name="hall_view_date_month_12">12月</string>
+    <string name="start_service">开启服务</string>
+    <string name="stop_service">停止服务</string>
+</resources>

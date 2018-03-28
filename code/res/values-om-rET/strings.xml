@@ -1,0 +1,29 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">T-Hall</string>
+    <!--alarm string-->
+    <string name="main_clock_12_hours_format" translatable="false">h&#58;mm&#8202;<b><font face="sans-serif" size="16">a</font></b></string>
+    <string name="clock_24_hours_format" translatable="false">kk&#58;mm</string>
+    <string name="description_direction_both">Irra dedebbisuf mirgatti haxxayi ykn cuffuf mirgatti haxxayi</string>
+    <string name="alarm_alert_snooze_text">Tuursu</string>
+    <string name="alarm_alert_dismiss_text">Balleessi</string>
+    <!--standby string-->
+    <string name="hall_view_date_sunday">Dilbata</string>
+    <string name="hall_view_date_monday">Wiixata</string>
+    <string name="hall_view_date_tuesday">Kibxataa</string>
+    <string name="hall_view_date_wednesday">Roobi</string>
+    <string name="hall_view_date_thursday">Kamsaa</string>
+    <string name="hall_view_date_friday">Jimataa</string>
+    <string name="hall_view_date_saturday">Sanbata</string>
+    <string name="hall_view_date_month_1">Amajjii</string>
+    <string name="hall_view_date_month_2">Gurandhala</string>
+    <string name="hall_view_date_month_3">Bitootessa</string>
+    <string name="hall_view_date_month_4">Ebla</string>
+    <string name="hall_view_date_month_5">Caamsaa</string>
+    <string name="hall_view_date_month_6">Waxabajjii</string>
+    <string name="hall_view_date_month_7">Adoolessa</string>
+    <string name="hall_view_date_month_8">Hagayya</string>
+    <string name="hall_view_date_month_9">Fulbaana</string>
+    <string name="hall_view_date_month_10">Onkoloolessa</string>
+    <string name="hall_view_date_month_11">Sadaasa</string>
+    <string name="hall_view_date_month_12">Muddee</string>
+</resources>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Copyright (C) 2015 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:ex="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layoutDirection="ltr">
+
+
+    <FrameLayout
+        android:id="@+id/dial_layout_hall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/dial_content_hall"
+            android:layout_width="@dimen/hall_window_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/hall_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+            >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/name_margin_top"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:textColor="@color/incall_action_bar_text_color"
+                    android:textSize="@dimen/name_text_size"/>
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/number_margin_name"
+                    android:maxLines="1"
+                    android:textColor="@color/number_text_color"
+                    android:textSize="@dimen/number_text_size"/>
+
+                <TextView
+                    android:id="@+id/incall_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="1"
+                    android:textColor="@color/number_text_color"
+                    android:textSize="@dimen/incall_time_text_size"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_boottom"
+                android:layout_marginTop="@dimen/margin_content_hall"
+            >
+
+                <ImageView
+                    android:id="@+id/answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/answer_margin_bottom"
+                    android:layout_marginLeft="@dimen/anser_margin_left"
+                    android:background="@mipmap/answer"/>
+
+                <ImageView
+                    android:id="@+id/incall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/incall"/>
+
+                <ImageView
+                    android:id="@+id/animation_hall_left_dial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/incall"
+                    android:layout_toRightOf="@id/answer"
+                    android:src="@drawable/hall_left_animation"/>
+
+                <ImageView
+                    android:id="@+id/hang_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/answer_margin_bottom"
+                    android:layout_marginRight="@dimen/anser_margin_left"
+                    android:background="@mipmap/hang_up"/>
+
+                <ImageView
+                    android:id="@+id/animation_hall_right_dial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/hang_up"
+                    android:layout_toRightOf="@id/incall"
+                    android:src="@drawable/hall_right_animation"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/alarm_layout_hall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/alarm_content_hall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="26dp"
+            android:background="@mipmap/hall_bg">
+
+            <TextClock
+                android:id="@+id/digital_clock_hall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="52dp"
+                android:format12Hour="@string/main_clock_12_hours_format"
+                android:format24Hour="@string/clock_24_hours_format"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textAppearance="@style/big_thin"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/title_hall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/digital_clock_hall"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="14dp"
+                android:maxLines="1"
+                android:textAppearance="@style/header_not_caps"
+                android:textColor="#d6ae92"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_hall"
+                android:layout_marginBottom="52dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/alarm_hall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/description_direction_both"
+                    android:src="@mipmap/hall_alarm"/>
+
+                <ImageView
+                    android:id="@+id/snooze_hall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginStart="37dp"
+                    android:contentDescription="@string/alarm_alert_snooze_text"
+                    android:src="@mipmap/hall_snooze"/>
+
+                <ImageView
+                    android:id="@+id/animation_hall_left_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/alarm_hall"
+                    android:layout_toRightOf="@id/snooze_hall"
+                    android:src="@drawable/hall_left_animation"/>
+
+                <ImageView
+                    android:id="@+id/dismiss_hall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="37dp"
+                    android:layout_marginRight="37dp"
+                    android:contentDescription="@string/alarm_alert_dismiss_text"
+                    android:src="@mipmap/hall_dismiss"/>
+
+                <ImageView
+                    android:id="@+id/animation_hall_right_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/dismiss_hall"
+                    android:layout_toRightOf="@id/alarm_hall"
+                    android:src="@drawable/hall_right_animation"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/standby_layout_hall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="39dp"
+            android:background="@mipmap/hall_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/standby_content_hall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageview_hour_1_hall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/hall_time_0"/>
+
+                    <ImageView
+                        android:id="@+id/imageview_hour_2_hall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:background="@mipmap/hall_time_0"/>
+
+                    <ImageView
+                        android:id="@+id/imageview_splite_hall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/hall_splite"/>
+
+                    <ImageView
+                        android:id="@+id/imageview_minute_1_hall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/hall_time_0"/>
+
+                    <ImageView
+                        android:id="@+id/imageview_minute_2_hall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:background="@mipmap/hall_time_0"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_hall_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="#d6ae92"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_miss_sms_call_hall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="36dp">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_miss_call_hall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageview_miss_call_hall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/hall_miss_call"/>
+
+                    <TextView
+                        android:id="@+id/textview_miss_call_hall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:fontFamily="sans-serif-thin"
+                        android:gravity="bottom"
+                        android:textColor="#d6ae92"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_miss_sms_hall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/linearlayout_miss_call_hall"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="1dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageview_miss_sms_hall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/hall_miss_sms"/>
+
+                    <TextView
+                        android:id="@+id/textview_miss_sms_hall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:fontFamily="sans-serif-thin"
+                        android:gravity="bottom"
+                        android:textColor="#d6ae92"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

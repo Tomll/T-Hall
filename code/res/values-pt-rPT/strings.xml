@@ -1,0 +1,29 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">T-Hall</string>
+    <!--alarm string-->
+    <string name="main_clock_12_hours_format" translatable="false">h&#58;mm&#8202;<b><font face="sans-serif" size="16">a</font></b></string>
+    <string name="clock_24_hours_format" translatable="false">kk&#58;mm</string>
+    <string name="description_direction_both">Deslizar rapidamente para a esquerda para suspender ou para a direita para ignorar</string>
+    <string name="alarm_alert_snooze_text">"Suspender"</string>
+    <string name="alarm_alert_dismiss_text">"Ignorar"</string>
+    <!--standby string-->
+    <string name="hall_view_date_sunday">Domingo</string>
+    <string name="hall_view_date_monday">Segunda-feira</string>
+    <string name="hall_view_date_tuesday">Terça-feira</string>
+    <string name="hall_view_date_wednesday">Quarta-feira</string>
+    <string name="hall_view_date_thursday">Quinta-feira</string>
+    <string name="hall_view_date_friday">Sexta-feira</string>
+    <string name="hall_view_date_saturday">Sábado</string>
+    <string name="hall_view_date_month_1">Janeiro</string>
+    <string name="hall_view_date_month_2">Fevereiro</string>
+    <string name="hall_view_date_month_3">Março</string>
+    <string name="hall_view_date_month_4">Abril</string>
+    <string name="hall_view_date_month_5">Maio</string>
+    <string name="hall_view_date_month_6">Junho</string>
+    <string name="hall_view_date_month_7">Julho</string>
+    <string name="hall_view_date_month_8">Agosto</string>
+    <string name="hall_view_date_month_9">Setembro</string>
+    <string name="hall_view_date_month_10">Outubro</string>
+    <string name="hall_view_date_month_11">Novembro</string>
+    <string name="hall_view_date_month_12">Dezembro</string>
+</resources>

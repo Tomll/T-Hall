@@ -1,0 +1,29 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">T-Hall</string>
+    <!--alarm string-->
+    <string name="main_clock_12_hours_format" translatable="false">h&#58;mm&#8202;<b><font face="sans-serif" size="16">a</font></b></string>
+    <string name="clock_24_hours_format" translatable="false">kk&#58;mm</string>
+    <string name="description_direction_both">"Telezesha kidole kushoto ili uhairishe au kulia ili uondoe"</string>
+    <string name="alarm_alert_snooze_text">"Nikumbushe baadaye"</string>
+    <string name="alarm_alert_dismiss_text">"Ondoa"</string>
+    <!--standby string-->
+    <string name="hall_view_date_sunday">Jumapili</string>
+    <string name="hall_view_date_monday">Jumatatu</string>
+    <string name="hall_view_date_tuesday">Jumanne</string>
+    <string name="hall_view_date_wednesday">Jumatano</string>
+    <string name="hall_view_date_thursday">Alhamisi</string>
+    <string name="hall_view_date_friday">Ijumaa</string>
+    <string name="hall_view_date_saturday">Jumamosi</string>
+    <string name="hall_view_date_month_1">Januari</string>
+    <string name="hall_view_date_month_2">Februari</string>
+    <string name="hall_view_date_month_3">Machi</string>
+    <string name="hall_view_date_month_4">Aprili</string>
+    <string name="hall_view_date_month_5">Mei</string>
+    <string name="hall_view_date_month_6">Juni</string>
+    <string name="hall_view_date_month_7">Julai</string>
+    <string name="hall_view_date_month_8">Agosti</string>
+    <string name="hall_view_date_month_9">Septemba</string>
+    <string name="hall_view_date_month_10">Oktoba</string>
+    <string name="hall_view_date_month_11">Novemba</string>
+    <string name="hall_view_date_month_12">Desemba</string>
+</resources>

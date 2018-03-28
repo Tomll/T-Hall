@@ -1,0 +1,29 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">T-Hall</string>
+    <!--alarm string-->
+    <string name="main_clock_12_hours_format" translatable="false">h&#58;mm&#8202;<b><font face="sans-serif" size="16">a</font></b></string>
+    <string name="clock_24_hours_format" translatable="false">kk&#58;mm</string>
+    <string name="description_direction_both">"Проведите влево, чтобы отложить сигнал, или вправо, чтобы отменить его"</string>
+    <string name="alarm_alert_snooze_text">"Отложить"</string>
+    <string name="alarm_alert_dismiss_text">"Выключить"</string>
+    <!--standby string-->
+    <string name="hall_view_date_sunday">Воскресенье</string>
+    <string name="hall_view_date_monday">понедельник</string>
+    <string name="hall_view_date_tuesday">вторник</string>
+    <string name="hall_view_date_wednesday">среда</string>
+    <string name="hall_view_date_thursday">Четверг</string>
+    <string name="hall_view_date_friday">пятница</string>
+    <string name="hall_view_date_saturday">суббота</string>
+    <string name="hall_view_date_month_1">январь</string>
+    <string name="hall_view_date_month_2">февраль</string>
+    <string name="hall_view_date_month_3">Март</string>
+    <string name="hall_view_date_month_4">апрель</string>
+    <string name="hall_view_date_month_5">май</string>
+    <string name="hall_view_date_month_6">июнь</string>
+    <string name="hall_view_date_month_7">июль</string>
+    <string name="hall_view_date_month_8">августейший</string>
+    <string name="hall_view_date_month_9">сентябрь</string>
+    <string name="hall_view_date_month_10">октября</string>
+    <string name="hall_view_date_month_11">ноябрь</string>
+    <string name="hall_view_date_month_12">Декабрь</string>
+</resources>
